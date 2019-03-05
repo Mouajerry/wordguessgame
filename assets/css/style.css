@@ -1,0 +1,18 @@
+
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    padding: 30px;
+    background: #ffffff;
+    color: #777777;
+    margin: auto; 
+    max-width: 700px;
+    max-height: 500px;
+}
+
+.col.shadow-lg.p-3.mb-5.rounded {
+    background-color: aliceblue;
+ }
