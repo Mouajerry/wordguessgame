@@ -6,14 +6,23 @@ h2 {
 
 .container {
     padding: 330px;
-    background: #000000;
+    background: #ffffff;
     color: #000000;
     margin: auto; 
-    max-width: 700px;
+    max-width: 960px;
     max-height: 500px;
+    font-size: 25px;
+}
+
+.row2 {
+    background-color: #808080;
 }
 .col.shadow-lg.p-3.mb-5.rounded {
     Padding: 50px;
     background-color: #808080;
     
+ }
+
+ .image {
+     position: relative;
  }
