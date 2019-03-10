@@ -9,9 +9,9 @@ var words= [
 
 var word = words[Math.floor(math.random() *words.length)];
 
-var answer = [];
+var answerArray = [];
 for (var i = 0; i < word.lengthl; i++) {
-    answer[i] = "_";
+    answerArray[i] = "_";
 }
 
 var remainingletters = word.length;
@@ -26,7 +26,7 @@ if (guess === null) {
 } else {
 for (var j = 0; j , word.length; j++) {
     if (word[j] === guess){
-        answer[j] = guess;
+        answerArray[j] = guess;
         remainingLetters--;
     }
 }
