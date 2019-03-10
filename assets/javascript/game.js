@@ -1,24 +1,16 @@
 
 
-var carNames= [
-    "honda",
-    "infiniti",
-    "toyota",
-    "nissan",
-    "chevrolet",
-    "ford"
-
-];
+var carNames= [ "honda", "infiniti","toyota","nissan","chevrolet","ford","lexus","suzuki","mazda","astonmartin","mitsubishi","audi"];
 
 const maxTries = 8;           
 
 var guessedLetters = [];       
 var currentWordIndex;           
 var guessingWord = [];          
-var remainingGuesses = 0;      
+var remainingGuesses = 0; 
+var wins = 0;        
 var gameStarted = false;      
-var hasFinished = false;        
-var wins = 0;                   
+var hasFinished = false;    
 
 function resetGame() {
     remainingGuesses = maxTries;
@@ -39,7 +31,6 @@ function resetGame() {
     document.getElementById("pressKeyTryAgain").style.cssText= "display: none";
     document.getElementById("gameover-image").style.cssText = "display: none";
     document.getElementById("youwin-image").style.cssText = "display: none";
-
  
     updateDisplay();
 };
@@ -56,7 +47,7 @@ function updateDisplay() {
     document.getElementById("guessedLetters").innerText = guessedLetters;
     if(remainingGuesses <= 0) {
         document.getElementById("gameover-image").style.cssText = "display: block";
-        document.getElementById("pressKeyTryAgain").style.cssText = "display:block";
+        document.getElementById("pressKeyTryAgain").style.cssText = "display: block";
         hasFinished = true;
     }
 };
