@@ -86,7 +86,7 @@ function makeGuess(letter) {
             evaluateGuess(letter);
         }
     }
-    
+
     updateDisplay();
     checkWin();
 };
